@@ -14,10 +14,10 @@ public enum CourseRtnCode {
 	TIME_ERROR("400", "Time error!"),								 // 輸入時間錯誤
 	DATA_NOT_FOUND("400", "Data is not found!"),					 // 查無資料
 	COURSE_NOT_EXISTED("400", "Course doesn't exist!"),		 		 // 此課堂並不存在
-	CLASH_COURSE_DAYTIME("400", "Course is clash(Days or Time)!"),	 // 課程衝堂(星期、時間)
+	CLASH_COURSE_DAYTIME("400", "Course is clash(Days or Time)!"),	 // 課程(星期、時間)衝堂
 	CLASH_COURSE("400", "Course is clash!"),						 // 課程衝堂
 	OVER_CREDIT("400", "Credit is over 10!"),						 // 學分超過10
-	ALREADY_CHOOSE_COURSE("403", "已經選過課，要變動請至加退選!"),	 // 課程已存在
+	ALREADY_CHOOSE_COURSE("403", "已經選過課，要變動請至加退選!"),	 // 已選過課，要變動請至加退選
 	COURSE_EXISTED("403", "Course is already exist!"),				 // 課程已存在
 	STUDENT_EXISTED("403", "Student is already exist!"),		 	 // 學生已存在		
 	COURSE_IS_EMPTY("400", "學生並沒有選課資料!");                    // 學生並沒有選課資料

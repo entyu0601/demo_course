@@ -16,7 +16,7 @@ public class CourseController {
 	private CourseService courseService;
 
 	/* �Ыؽҵ{ */
-	@PostMapping(value = "/api/course")
+	@PostMapping(value = "/api/createCourse")
 	public CourseResp course(@RequestBody CourseReq req) {
 		return courseService.createCourse(req.getCourseCode(), req.getCourseName(), req.getDays(),
 				req.getCourseStrtime(), req.getCourseEndtime(), req.getCredit());

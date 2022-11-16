@@ -30,10 +30,6 @@ public class Students {
 		this.studentName = studentName;
 	}
 
-	public void updateStudents(String studentName) {
-		this.studentName = studentName;
-	}
-
 	public String getStudentId() {
 		return studentId;
 	}

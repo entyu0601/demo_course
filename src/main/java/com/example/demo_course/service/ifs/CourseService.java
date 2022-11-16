@@ -23,7 +23,7 @@ public interface CourseService {
 	// 查詢課程(課堂名稱)
 	public CourseResp getCourseByName(String courseName);
 
-	// 已選上課程查詢(學生ID)
+	// 查詢已選上課程查詢(學生ID)
 	public CourseResp getCourseByStudentId(String studentId);
 
 	// 創建學生資料
