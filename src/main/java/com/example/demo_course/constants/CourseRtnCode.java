@@ -4,7 +4,7 @@ public enum CourseRtnCode {
 
 	VALUE_REQUIRED("400", "Value error(Can not be null or empty)!"), // 不得輸入為 空或是 null
 	CREATE_SUCCESSFUL("200", "Created success!"), 					 // 創建資料成功
-	CHOOSE_SUCCESSFUL("200", "Choose success!"), 					 // 創建資料成功
+	CHOOSE_SUCCESSFUL("200", "Choose success!"), 					 // 加選資料成功
 	UPDATE_SUCCESSFUL("200", "Update data success!"), 				 // 修改資料成功
 	DELETE_SUCCESSFUL("200", "Delete data success!"), 				 // 刪除資料成功
 	DATA_IS_FOUND("200", "Data is found!"),  						 // 找到資料
@@ -20,7 +20,7 @@ public enum CourseRtnCode {
 	ALREADY_CHOOSE_COURSE("403", "已經選過課，要變動請至加退選!"),	 // 已選過課，要變動請至加退選
 	COURSE_EXISTED("403", "Course is already exist!"),				 // 課程已存在
 	STUDENT_EXISTED("403", "Student is already exist!"),		 	 // 學生已存在		
-	COURSE_IS_EMPTY("400", "學生並沒有選課資料!");                    // 學生並沒有選課資料
+	COURSE_IS_EMPTY("400", "學生並沒有選課資料，請先進行選課!");       // 學生並沒有選課資料
 
 	private String code;
 

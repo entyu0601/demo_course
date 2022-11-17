@@ -19,8 +19,6 @@ public class Students {
 	@Column(name = "courseData")
 	private String courseData;
 
-//	private List<Course> CourseSelected;
-
 	public Students() {
 
 	}

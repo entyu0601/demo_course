@@ -1,5 +1,6 @@
 package com.example.demo_course.vo;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
@@ -28,13 +29,17 @@ public class CourseResp {
 	@JsonProperty("courseName_list")
 	private List<Course> courseNameList;
 
+	@JsonProperty("courseCode_List")
+	private List<Course> courseCodeList = new ArrayList<>();
+
 	public CourseResp() {
 
 	}
 	
-	public CourseResp(Set<String> courseCodeSet,String message) {
-		this.courseCodeSet=courseCodeSet;
-		this.message=message;
+
+	public CourseResp(Set<String> courseCodeSet, String message) {
+		this.courseCodeSet = courseCodeSet;
+		this.message = message;
 	}
 
 	public CourseResp(Students students, List<Course> courseNameList, String message) {
@@ -113,6 +118,14 @@ public class CourseResp {
 
 	public void setAllCourse(String allCourse) {
 		this.allCourse = allCourse;
+	}
+
+	public List<Course> getCourseCodeList() {
+		return courseCodeList;
+	}
+
+	public void setCourseCodeList(List<Course> courseCodeList) {
+		this.courseCodeList = courseCodeList;
 	}
 
 }

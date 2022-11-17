@@ -47,7 +47,7 @@ public class CourseController {
 		return courseService.getCourseByName(req.getCourseName());
 	}
 	
-	/* 查詢課程(學生ID) */
+	/* 查詢已選上的課程(學生ID) */
 	@PostMapping(value = "/api/getCourseByStudentId")
 	public CourseResp getCourseByStudentId(@RequestBody CourseReq req) {
 		return courseService.getCourseByStudentId(req.getStudentId());
